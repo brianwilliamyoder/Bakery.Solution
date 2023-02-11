@@ -9,7 +9,12 @@ namespace Bakery.Tests
 
   public class BakeryTests
   {
-
+    [TestMethod]
+    public void Kitchen_CreateInstanceOfClass_True()
+    {
+      BakedGoods newBakery = new BakedGoods();
+      Assert.AreEqual(typeof(BakedGoods), newBakery.GetType());
+    }
   }
 
 
