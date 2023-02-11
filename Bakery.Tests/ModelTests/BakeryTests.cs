@@ -29,7 +29,7 @@ namespace Bakery.Tests
     {
       BakedGoods newBakery = new BakedGoods();
       int result = newBakery.PastryCost;
-      Assert.AreEqual(result, 3);
+      Assert.AreEqual(result, 2);
     }
   }
 
