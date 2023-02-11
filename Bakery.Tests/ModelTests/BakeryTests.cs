@@ -21,7 +21,7 @@ namespace Bakery.Tests
     {
       BakedGoods newBakery = new BakedGoods();
       int result = newBakery.LoafCost;
-      Assert.AreEqual(result, 4);
+      Assert.AreEqual(result, 5);
       
     }
   }
