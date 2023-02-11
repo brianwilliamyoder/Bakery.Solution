@@ -31,6 +31,14 @@ namespace Bakery.Tests
       int result = newBakery.PastryCost;
       Assert.AreEqual(result, 2);
     }
+    [TestMethod]
+    public void CalculateBread_GetAmount_3()
+    {
+      BakedGoods newBakery = new BakedGoods();
+      int result = newBakery.CalculateBread(3);
+      Assert.AreEqual(result, 2);
+      
+    }
   }
 
 
