@@ -17,12 +17,19 @@ namespace Bakery.Tests
     }
 
     [TestMethod]
-    public void BakedGoods_SetLoafCost_5()
+    public void BakedGoods_GetLoafCost_5()
     {
       BakedGoods newBakery = new BakedGoods();
       int result = newBakery.LoafCost;
       Assert.AreEqual(result, 5);
-      
+    }
+
+    [TestMethod]
+    public void BakedGoods_GetPastryCost_2()
+    {
+      BakedGoods newBakery = new BakedGoods();
+      int result = newBakery.PastryCost;
+      Assert.AreEqual(result, 3);
     }
   }
 
