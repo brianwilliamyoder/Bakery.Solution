@@ -36,7 +36,7 @@ namespace Bakery.Tests
     {
       BakedGoods newBakery = new BakedGoods();
       int result = newBakery.CalculateBread(3);
-      Assert.AreEqual(result, 2);
+      Assert.AreEqual(result, 3);
       
     }
   }
