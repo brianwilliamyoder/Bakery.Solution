@@ -10,52 +10,50 @@ namespace Bakery.Tests
   public class BakeryTests
   {
     [TestMethod]
-    public void BakedGoods_CreateInstanceOfClass_True()
+    public void Bread_CreateInstanceOfClass_True()
     {
-      BakedGoods newBakery = new BakedGoods();
-      Assert.AreEqual(typeof(BakedGoods), newBakery.GetType());
+      Bread newBread = new Bread();
+      Assert.AreEqual(typeof(Bread), newBread.GetType());
     }
 
     [TestMethod]
-    public void BakedGoods_GetLoafCost_5()
+    public void Bread_GetLoafCost_5()
     {
-      BakedGoods newBakery = new BakedGoods();
-      int result = newBakery.LoafCost;
+      Bread newBread = new Bread();
+      int result = newBread.LoafCost;
       Assert.AreEqual(result, 5);
     }
 
     [TestMethod]
-    public void BakedGoods_GetPastryCost_2()
-    {
-      BakedGoods newBakery = new BakedGoods();
-      int result = newBakery.PastryCost;
-      Assert.AreEqual(result, 2);
-    }
-    
-    [TestMethod]
     public void CalculateBread_GetTotal_5()
     {
-    BakedGoods newBakery = new BakedGoods();
-    int result = newBakery.CalculateBread(1);
+    Bread newBread = new Bread();
+    int result = newBread.CalculateBread(1);
     Assert.AreEqual(result, 5);
     }
 
     [TestMethod]
     public void CalculateBread_GetTotal_10()
     {
-      BakedGoods newBakery = new BakedGoods();
-      int result = newBakery.CalculateBread(3);
+      Bread newBread = new Bread();
+      int result = newBread.CalculateBread(3);
       Assert.AreEqual(result, 10);
     }
     
     [TestMethod]
     public void CalculateBread_GetTotal_95()
     {
-      BakedGoods newBakery = new BakedGoods();
-      int result = newBakery.CalculateBread(28);
+      Bread newBread = new Bread();
+      int result = newBread.CalculateBread(28);
       Assert.AreEqual(result, 95);
     }
 
+    [TestMethod]
+    public void Pastry_CreateInstance_Pastry()
+    {
+      Pastry newPastry = new Pastry();
+      Assert.AreEqual(typeof(Pastry), newPastry.GetType());
+    }
 
   }
 
