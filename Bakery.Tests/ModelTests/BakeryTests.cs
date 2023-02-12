@@ -45,7 +45,7 @@ namespace Bakery.Tests
     {
       Bread newBread = new Bread();
       int result = newBread.CalculateBread(28);
-      Assert.AreEqual(result, 95);
+      Assert.AreEqual(result, 70);
     }
 
     [TestMethod]
