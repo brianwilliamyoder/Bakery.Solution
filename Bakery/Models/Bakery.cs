@@ -1,5 +1,6 @@
 namespace Bakery.Models
 {
+
  public class Bread
  {
 
@@ -27,7 +28,6 @@ namespace Bakery.Models
   }
  }
 
-
  public class Pastry
  {
   public int PastryCost {get;}
@@ -50,7 +50,6 @@ namespace Bakery.Models
       totalCost += PastryCost;
     }
   return totalCost;
-  
   }
  }
 }
