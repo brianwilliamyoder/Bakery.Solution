@@ -48,6 +48,13 @@ namespace Bakery.Tests
       Assert.AreEqual(result, 10);
     }
     
+    [TestMethod]
+    public void CalculateBread_GetTotal_95()
+    {
+      BakedGoods newBakery = new BakedGoods();
+      int result = newBakery.CalculateBread(28);
+      Assert.AreEqual(result, 95);
+    }
 
 
   }
