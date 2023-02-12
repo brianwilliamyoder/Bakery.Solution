@@ -62,9 +62,13 @@ namespace Bakery.Tests
       int result = newPastry.CalculatePastry(1);
       Assert.AreEqual(result, 2);
     }
+
+    [TestMethod]
+    public void CalculatePastry_GetTotal_4()
+    {
+      Pastry newPastry = new Pastry();
+      int result = newPastry.CalculatePastry(3);
+      Assert.AreEqual(result, 4);
+    }
   }
-
-
-
-
 }
