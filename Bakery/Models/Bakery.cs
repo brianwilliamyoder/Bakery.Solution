@@ -13,7 +13,7 @@ namespace Bakery.Models
 
   public int CalculateBread(int amount)
   {
-    int loafCost = LoafCost;
+    
     int totalCost = 0;
 
     for (int i = 1; i <= amount; i++)
@@ -22,7 +22,7 @@ namespace Bakery.Models
       {
         continue;
       }
-      totalCost += loafCost;
+      totalCost += LoafCost;
     }
   return totalCost;
   }
@@ -39,7 +39,6 @@ namespace Bakery.Models
 
   public int CalculatePastry(int amount)
   {
-      int pastryCost = PastryCost;
       int totalCost = 0;
       for (int i = 1; i <= amount; i++)
     {
@@ -47,6 +46,7 @@ namespace Bakery.Models
       {
         continue;
       }
+      
       totalCost += PastryCost;
     }
   return totalCost;
